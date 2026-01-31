@@ -98,6 +98,9 @@ importers:
       '@types/gulp':
         specifier: ^4.0.9
         version: 4.0.17
+      '@types/node':
+        specifier: ^17.0.42
+        version: 17.0.45
       '@vercel/node':
         specifier: ^2.9.6
         version: 2.15.10
@@ -962,8 +965,8 @@ packages:
   '@types/node@14.18.33':
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
 
-  '@types/node@22.10.5':
-    resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
+  '@types/node@17.0.45':
+    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
   '@types/picomatch@3.0.1':
     resolution: {integrity: sha512-1MRgzpzY0hOp9pW/kLRxeQhUWwil6gnrUYd3oEpeYBqp/FexhaCPv3F8LsYr47gtUU45fO2cm1dbwkSrHEo8Uw==}
@@ -4368,9 +4371,6 @@ packages:
     resolution: {integrity: sha512-/RXwi5m/Mu3H6IHQGww3GNt1PNXlbeCuclF2QYR14L/2CHPz3DFZkvB5hZ0N/QUkiXWCACML2jXViIQEQc2MLg==}
     engines: {node: '>= 0.10'}
 
-  undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
-
   undici@7.4.0:
     resolution: {integrity: sha512-PUQM3/es3noM24oUn10u3kNNap0AbxESOmnssmW+dOi9yGwlUSi5nTNYl3bNbTkWOF8YZDkx2tCmj9OtQ3iGGw==}
     engines: {node: '>=20.18.1'}
@@ -5485,20 +5485,20 @@ snapshots:
 
   '@types/glob-stream@8.0.2':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
       '@types/picomatch': 3.0.1
       '@types/streamx': 2.9.5
 
   '@types/gulp@4.0.17':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
       '@types/undertaker': 1.2.11
       '@types/vinyl-fs': 3.0.5
       chokidar: 3.6.0
 
   '@types/http-proxy@1.17.15':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
 
   '@types/json-schema@7.0.15': {}
 
@@ -5506,39 +5506,37 @@ snapshots:
 
   '@types/node-fetch@2.6.3':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
       form-data: 3.0.4
 
   '@types/node@14.18.33': {}
 
-  '@types/node@22.10.5':
-    dependencies:
-      undici-types: 6.20.0
+  '@types/node@17.0.45': {}
 
   '@types/picomatch@3.0.1': {}
 
   '@types/streamx@2.9.5':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
 
   '@types/undertaker-registry@1.0.4': {}
 
   '@types/undertaker@1.2.11':
     dependencies:
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
       '@types/undertaker-registry': 1.0.4
       async-done: 1.3.2
 
   '@types/vinyl-fs@3.0.5':
     dependencies:
       '@types/glob-stream': 8.0.2
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
       '@types/vinyl': 2.0.12
 
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
 
   '@ungap/structured-clone@1.2.1': {}
 
@@ -7481,7 +7479,7 @@ snapshots:
   gulp-eslint-new@1.9.1:
     dependencies:
       '@types/eslint': 8.56.12
-      '@types/node': 22.10.5
+      '@types/node': 17.0.45
       eslint: 8.57.1
       fancy-log: 2.0.0
       plugin-error: 2.0.1
@@ -9590,8 +9588,6 @@ snapshots:
       object.defaults: 1.1.0
       object.reduce: 1.0.1
       undertaker-registry: 1.0.1
-
-  undici-types@6.20.0: {}
 
   undici@7.4.0: {}
 
